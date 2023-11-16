@@ -8,11 +8,11 @@ module.exports = {
       'accent': "#C99B63"
     },
     fontSize: {
-      'xl': "76px",
-      'lg': "49px",
-      'base': "39px",
-      'sm': "25px",
-      'xs': "20px"
+      'xl': "4.75rem",
+      'lg': "3.06rem",
+      'base': "2.44rem",
+      'sm': "1.56rem",
+      'xs': "1.25rem"
     },
     extend: {},
   },

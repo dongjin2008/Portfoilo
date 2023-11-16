@@ -4,14 +4,58 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Varela+Round&display=swap');
 
+@layer base {
+  h1 {
+    @apply text-xl;
+  }
+  h2 {
+    @apply text-lg;
+  }
+  h3 {
+    @apply text-base;
+  }
+  h4 {
+    @apply text-sm;
+  }
+  h5 {
+    @apply text-xs;
+  }
+}
+
+
+
+
+
 * {
   box-sizing: border-box;
   background-color: #2A3443;
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  font-size: 4px;
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
+  scroll-snap-type: y mandatory;
 }
 
+section {
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 8px;
+  }
+}
