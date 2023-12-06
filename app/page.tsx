@@ -3,6 +3,7 @@ import cloud from './assets/cloud.svg'
 import flask from './assets/flask.svg'
 import chat from './assets/chat.svg'
 import briefcase from './assets/briefcase.svg'
+import shop from './assets/shop.svg'
 
 
 export default function Home() {
@@ -52,50 +53,61 @@ export default function Home() {
 
       <section className="flex my-auto flex-col gap-[4rem] w-screen h-screen">
         <h1 id="project" className="text-secondary font-bold text-center">PROJECT</h1>
-        <div className="w-[81.25rem] h-[53rem] rounded-[2rem] mx-auto py-[2em] flex justify-center items-center bg-secondary">
-          <div className="bg-secondary grid grid-cols-3 gap-[4.88rem] ">
-            <div className="group bg-[black] hover:bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl flex flex-col justify-center gap-[1rem]">
-              <Image className="h-[4rem] group-hover:hidden bg-[black]" src={cloud} alt='cloud'/>
-              <h3 className="text-[white] bg-[black] group-hover:hidden font-bold text-center">Weather App</h3>
+        <div className='flex flex-col gap-2'>
+          <div className="w-[81.25rem] h-[53rem] rounded-[2rem] mx-auto py-[2em] flex justify-center items-center bg-secondary">
+            <div className="bg-secondary grid grid-cols-3 gap-[4.88rem] ">
+              <div className="group bg-[black] hover:bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl flex flex-col justify-center gap-[1rem]">
+                <Image className="h-[4rem] group-hover:hidden bg-[black]" src={cloud} alt='cloud'/>
+                <h3 className="text-[white] bg-[black] group-hover:hidden font-bold text-center">Weather App</h3>
 
-              <h4 className="font-bold hidden group-hover:block text-center text-secondary">Weather App</h4>
-              <h5 className="font-medium hidden group-hover:block text-center text-secondary">Simple weather app <br/> made with Next.js</h5>
-              <a className="font-medium text[16px] hidden group-hover:block text-center text-accent" href="https://weather-app-v2-vert.vercel.app/" target="_blank">Go to this project</a>
+                <h4 className="font-bold hidden group-hover:block text-center text-secondary">Weather App</h4>
+                <h5 className="font-medium hidden group-hover:block text-center text-secondary">Simple weather app <br/> made with Next.js</h5>
+                <a className="font-medium text[16px] hidden group-hover:block text-center text-accent" href="https://weather-app-v2-vert.vercel.app/" target="_blank">Go to this project</a>
+              </div>
+
+              <div className="group bg-[#7D4F59] hover:bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl flex flex-col justify-center gap-[1rem]">
+                <Image className="h-[4rem] group-hover:hidden bg-[#7D4F59]" src={flask} alt='flask'/>
+                <h3 className="text-[#D8D2C0] bg-[#7D4F59] group-hover:hidden font-bold text-center">Chemix</h3>
+
+                <h4 className="font-bold hidden group-hover:block text-center text-secondary">Chemix</h4>
+                <h5 className="font-medium hidden group-hover:block text-center text-secondary"> Chemistry dashboard <br/> made with Vue</h5>
+                <a className="font-medium text[16px] hidden group-hover:block text-center text-accent" href="https://chemix.vercel.app/" target="_blank">Go to this project</a>
+              </div>
+
+              <div className="group hover:bg-primary bg-[#fff] w-[19.38rem] h-[12.13rem] rounded-2xl flex flex-col justify-center gap-[1rem]">
+                <Image className="h-[4rem] group-hover:hidden bg-[#fff]" src={chat} alt='chat'/>
+                <h3 className="text-[#000] bg-[#fff] group-hover:hidden font-bold text-center">Whisper Chat</h3>
+
+                <h4 className="font-bold hidden group-hover:block text-center text-secondary">Whisper Chat</h4>
+                <h5 className="font-medium hidden group-hover:block text-center text-secondary"> Chat web App <br/> made with Next.js</h5>
+                <a className="font-medium text[16px] hidden group-hover:block text-center text-accent" href="https://whisperchat-zeta.vercel.app/" target="_blank">Go to this project</a>
+              </div>
+
+              <div className="group bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl flex flex-col justify-center gap-[1rem]">
+                <Image className="h-[4rem] group-hover:hidden bg-primary" src={briefcase} alt='briefcase'/>
+                <h3 className="text-secondary bg-primary group-hover:hidden font-bold text-center">Portfolio</h3>
+
+                <h4 className="font-bold hidden group-hover:block text-center text-secondary">Portfolio</h4>
+                <h5 className="font-medium hidden group-hover:block text-center text-secondary"> My portfolio <br/> made with Next.js</h5>
+                <a className="font-medium text[16px] hidden group-hover:block text-center text-accent" href="https://dongjinkim.vercel.app/" target="_blank">Go to this project</a>
+              </div>
+
+              <div className="group bg-[#383A3E] hover:bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl flex flex-col justify-center gap-[1rem]">
+                <Image className="h-[4rem] group-hover:hidden bg-[#383A3E]" src={shop} alt='briefcase'/>
+                <h3 className="text-[#6CC3E4] bg-[#383A3E] group-hover:hidden font-bold text-center">ShopNest</h3>
+
+                <h4 className="font-bold hidden group-hover:block text-center text-secondary">ShopNest</h4>
+                <h5 className="font-medium hidden group-hover:block text-center text-secondary"> E-commerce wensite <br/> made with Next.js</h5>
+                <a className="font-medium text[16px] hidden group-hover:block text-center text-accent" href="https://shopnest-ten.vercel.app/" target="_blank">Go to this project</a>
+              </div>
+
+              <div className="bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl"></div>
+              <div className="bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl"></div>
+              <div className="bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl"></div>
+              <div className="bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl"></div>
             </div>
-
-            <div className="group bg-[#7D4F59] hover:bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl flex flex-col justify-center gap-[1rem]">
-              <Image className="h-[4rem] group-hover:hidden bg-[#7D4F59]" src={flask} alt='flask'/>
-              <h3 className="text-[#D8D2C0] bg-[#7D4F59] group-hover:hidden font-bold text-center">Chemix</h3>
-
-              <h4 className="font-bold hidden group-hover:block text-center text-secondary">Chemix</h4>
-              <h5 className="font-medium hidden group-hover:block text-center text-secondary"> Chemistry dashboard <br/> made with Vue</h5>
-              <a className="font-medium text[16px] hidden group-hover:block text-center text-accent" href="https://chemix.vercel.app/" target="_blank">Go to this project</a>
-            </div>
-
-            <div className="group hover:bg-primary bg-[#fff] w-[19.38rem] h-[12.13rem] rounded-2xl flex flex-col justify-center gap-[1rem]">
-              <Image className="h-[4rem] group-hover:hidden bg-[#fff]" src={chat} alt='chat'/>
-              <h3 className="text-[#000] bg-[#fff] group-hover:hidden font-bold text-center">Whisper Chat</h3>
-
-              <h4 className="font-bold hidden group-hover:block text-center text-secondary">Whisper Chat</h4>
-              <h5 className="font-medium hidden group-hover:block text-center text-secondary"> Chat web App <br/> made with Next.js</h5>
-              <a className="font-medium text[16px] hidden group-hover:block text-center text-accent" href="https://whisperchat-zeta.vercel.app/" target="_blank">Go to this project</a>
-            </div>
-
-            <div className="group bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl flex flex-col justify-center gap-[1rem]">
-              <Image className="h-[4rem] group-hover:hidden bg-primary" src={briefcase} alt='briefcase'/>
-              <h3 className="text-secondary bg-primary group-hover:hidden font-bold text-center">Portfolio</h3>
-
-              <h4 className="font-bold hidden group-hover:block text-center text-secondary">Portfolio</h4>
-              <h5 className="font-medium hidden group-hover:block text-center text-secondary"> My portfolio <br/> made with Next.js</h5>
-              <a className="font-medium text[16px] hidden group-hover:block text-center text-accent" href="https://dongjinkim.vercel.app/" target="_blank">Go to this project</a>
-            </div>
-
-            <div className="bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl"></div>
-            <div className="bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl"></div>
-            <div className="bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl"></div>
-            <div className="bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl"></div>
-            <div className="bg-primary w-[19.38rem] h-[12.13rem] rounded-2xl"></div>
           </div>
+          <a href='/blog' className='text-center text-sm text-accent font-extrabold'>Check out my blog!!</a>
         </div>
       </section>
     </main>
